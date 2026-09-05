@@ -3,7 +3,9 @@
 
 ## Project Overview
 
-This project is an interactive mortgage loan reporting solution developed with SQL Server Reporting Services. SQL was used to extract, filter, join, clean, and aggregate the mortgage data before connecting it to SSRS in Microsoft Visual Studio.
+This project is an interactive mortgage loan reporting solution developed with SQL Server Reporting Services. This end-to-end mortgage analytics project uses SQL Server, SSIS, SSRS, SSMS, and Visual Studio. I developed SSIS packages to extract data from multiple sources, validate required fields, convert data types, and load clean records into staging and data warehouse tables. Conditional splits and error outputs were used to identify invalid phone numbers, ZIP codes, Social Security numbers, and missing values for further review.
+
+After completing the ETL process, I developed interactive SSRS reports with parameters, gauges, charts, drill-down tables, subreports, conditional formatting, and period comparisons. The solution transforms raw mortgage data into reliable, meaningful insights that support loan-performance monitoring and informed decision-making.
 
 The dashboard allows users to monitor loan activity, compare reporting periods, review borrower and property information, and navigate between overview, loans-to-date, demographics, and detailed reports.
 
