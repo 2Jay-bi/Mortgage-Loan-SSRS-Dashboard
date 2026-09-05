@@ -25,7 +25,7 @@ The objective was to develop an interactive SSRS dashboard that helps users:
 * Identify favorable and unfavorable performance
 * Support informed mortgage-management decisions
 
-## Tools Used
+## Tools Used FOR SSRS
 
 * SQL Server Management Studio
 * SQL Server
@@ -35,6 +35,28 @@ The objective was to develop an interactive SSRS dashboard that helps users:
 * Report Builder expressions
 * ETL and data-cleaning techniques
 * Data warehouse concepts
+* The mortgage ETL project uses these SSIS features:
+
+OLE DB Source: Extracts mortgage data from SQL Server tables or views.
+Excel and XML Sources: Imports mortgage data from external files.
+Data Flow Tasks: Controls data movement and transformation.
+Connection Managers: Connects SSIS to SQL Server, Excel, XML, and flat files.
+Data Conversion: Converts columns into the correct data types.
+Conditional Split: Separates valid and invalid records using business rules.
+Required-field validation: Detects missing or null values.
+Error handling: Redirects invalid records instead of stopping the entire ETL process.
+Flat File Destinations: Stores rejected records, including invalid phone numbers, ZIP codes, SSNs, and missing values.
+OLE DB Destination: Loads clean records into SQL Server staging, dimension, and fact tables.
+Staging tables: Temporarily store extracted data before final processing.
+Fact and dimension loading: Loads the mortgage data warehouse tables.
+Control Flow: Manages package execution order and dependencies.
+Event Handlers: Records package errors and responds to execution failures.
+Package parameters: Makes file locations and connection values configurable.
+Derived Columns: Creates or modifies values during transformation.
+Lookup: Matches incoming records with existing reference or dimension records.
+Aggregate: Calculates summarized values when required.
+Data Viewer and execution results: Supports testing, row monitoring, and troubleshooting.
+* 
 
 ## Project Workflow
 
